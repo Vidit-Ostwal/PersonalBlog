@@ -1,2 +1,2 @@
 # PersonalBlog
-Codebase of all the personal blogs.
+This respository will contain all the code in my personal blogs.
