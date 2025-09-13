@@ -22,7 +22,6 @@
 > Every process starts with a **main thread** by default.  
 > A multi-threaded process can create and run **multiple threads** within that single process.
 
-
 ```mermaid
 graph TB
     subgraph "Sequential Processing"
@@ -32,7 +31,10 @@ graph TB
         D --> E[Task 3]
         E --> F[Task 4]
     end
-    
+```
+
+```mermaid
+graph TB
     subgraph "Multithreading (Single Process)"
         G[Process B] --> H[Shared Memory Space]
         G --> I[Thread 1<br/>Task A]
@@ -51,7 +53,10 @@ graph TB
         style K fill:#fff3e0
         style L fill:#fff3e0
     end
-    
+```
+
+```mermaid
+graph TB
     subgraph "Multiprocessing (Multiple Processes)"
         M[Process C<br/>Isolated Memory] --> N[Main Thread<br/>Task 1]
         O[Process D<br/>Isolated Memory] --> P[Main Thread<br/>Task 2]
